@@ -41,3 +41,10 @@ React libray
          - In a UI, it's not necessary for every update to be applied immediately; in fact, doing so can be wasteful, causing frames to drop and degrading the user experience.
          - Different types of updates have different priorities — an animation update needs to complete more quickly than, say, an update from a data store.
          -  A push-based approach requires the app (you, the programmer) to decide how to schedule work. A pull-based approach allows the framework (React) to be smart and make those decisions for you.
+         <br>
+         <h1>fibre</h1>
+         pause work and come back to it later.
+assign priority to different types of work.
+reuse previously completed work.
+abort work if it's no longer needed.
+         
