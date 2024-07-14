@@ -47,4 +47,24 @@ React libray
 assign priority to different types of work.
 reuse previously completed work.
 abort work if it's no longer needed.
+
+# props = 
+props stands for properties.
+There are two ways to define props..
+```react
+function Car(props) {
+console.log(props.brand)
+  return <h2>I am a { props.brand }!</h2>;
+}
+```
+```react
+function Card({myname, btx_text = "visit me "}){
+    console.log(myname)
+return(
+  <h1 className="text-lg font-semibold text-white">{myname}</h1>
+  <button className="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-black">
+            {btx_text} →
+          </button>
+)}
+``
          
