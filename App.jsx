@@ -1,11 +1,26 @@
-import Chai from "./Chai"
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
+import Card from './cards'
+
 function App() {
-  const username = "by hitesh "
+  const [count, setCount] = useState(0)
+  let myobj = {
+    name : "vivek",
+    age :21,
+    login : true
+  }
+  let myarr = [1.2,6,8]
   return (
     <>
-      <Chai></Chai>
-      <h1>chai aur code from youtube {username}</h1>
+      <h1 className=' bg-green-600  text-slate-300 p-4 rounded-2xl my-3'>Tailwind test</h1>
+     <Card myname = "Sweeney" btx_text = "follow me" />
+     <Card myname = "sydney" myimg = "https://www.usmagazine.com/wp-content/uploads/2021/05/5-Things-To-Know-About-Sydney-Sweeney-After-Anti-Bullying-Video-001.jpg?quality=86&strip=all"/>
+
+
     </>
   )
 }
+
 export default App
