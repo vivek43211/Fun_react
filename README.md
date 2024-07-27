@@ -66,5 +66,11 @@ return(
             {btx_text} →
           </button>
 )}
-``
-         
+```
+The on click method in React expects a function reference
+You can't directly pass parameters inside the function, instead, you need to pass it as a reference or use arrow function syntax
+Actually the initial state has color olive and the reload technically resets the state. So, it gets the olive color.
+```
+onClick={()=>setColor("red")}
+```
+
